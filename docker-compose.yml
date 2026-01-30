@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  lab01-polinizacao:
+    image: guilherme/lab01-polinizacao:latest
+    container_name: lab01
+    restart: always
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.10
+    ports:
+      - "8081:80"
+
+  lab02-alimentos:
+    image: felipe/lab02-alimentos:latest
+    container_name: lab02
+    restart: always
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.20
+    ports:
+      - "8082:80"
+
+  lab03-gaica:
+    image: isis/lab03-gaica:latest
+    container_name: lab03
+    restart: always
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.30
+    ports:
+      - "8083:80"
+
+  lab04-xiquexique:
+    image: pedro/lab04-xiquexique:latest
+    container_name: lab04
+    restart: always
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.40
+    ports:
+      - "8084:80"
+
+  lab05-reproducao:
+    image: wendel/lab05-reproducao:latest
+    container_name: lab05
+    restart: always
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.50
+    ports:
+      - "8085:80"
+
+  portaria-proxy:
+    image: nginx:alpine
+    container_name: portaria_sertao
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    networks:
+      condominio_net:
+        ipv4_address: 192.168.10.2
+    depends_on:
+      - lab01-polinizacao
+      - lab02-alimentos
+      - lab03-gaica
+      - lab04-xiquexique
+      - lab05-reproducao
+
+networks:
+  condominio_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+          gateway: 192.168.10.1
