@@ -16,11 +16,12 @@ de rede e acesso enquanto cada grupo mantém seu site e serviços de forma indep
 2. Grupo de Pesquisa em Polinização e Agroecologia  
    **Responsável:** Guilherme Henrique Santos Araújo
 
-3. GAICA Sertão — Grupo de Apoio às Ações Integradas em Ciências Agrárias do Alto Sertão Sergipano  
+3. GAICA Sertão — Grupo de Apoio às Ações Integradas em Ciências Agrárias do Alto Sertão Sergipano
+   ** Descrição:** O GAICA SERTÃO é um grupo de pesquisa voltado ao desenvolvimento científico, tecnológico e social na área das Ciências Agrárias, com foco no Alto Sertão Sergipano.
    **Responsável:** Isis Gabrielle Conceição de Menezes
 
-4. Xique-Xique: Grupo de Pesquisa sobre Gêneros e Sexualidades  
+5. Xique-Xique: Grupo de Pesquisa sobre Gêneros e Sexualidades  
    **Responsável:** Pedro Lucas Souza de Novaes
 
-5. Tecnologia, Sustentabilidade, Produção e Reprodução Animal  
+6. Tecnologia, Sustentabilidade, Produção e Reprodução Animal  
    **Responsável:** Wendel Alexsander Gomes Menezes
