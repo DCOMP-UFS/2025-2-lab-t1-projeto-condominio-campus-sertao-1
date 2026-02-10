@@ -41,15 +41,15 @@ services:
     ports:
       - "8084:80"
 
-  # lab05-reproducao:
-  #   image: wendel/lab05-reproducao:latest
-  #   container_name: lab05
-  #   restart: always
-  #   networks:
-  #     condominio_net:
-  #       ipv4_address: 192.168.10.50
-  #   ports:
-  #     - "8085:80"
+   lab05-reproducao:
+     image: wendel/lab05-reproducao:latest
+     container_name: lab05
+     restart: always
+     networks:
+       condominio_net:
+         ipv4_address: 54.87.46.109
+     ports:
+       - "8085:80"
 
   portaria-proxy:
     image: nginx:alpine
