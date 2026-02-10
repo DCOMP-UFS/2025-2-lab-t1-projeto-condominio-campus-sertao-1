@@ -22,3 +22,4 @@
 | 18 | Servidor | Servidor de rede/armazenamento | 76206465000165-1-000046/2025-000002 | 1 |
 
 ## Total de Equipamentos: **141 unidades**
+## Valor total: **R$ 239.584,46**
